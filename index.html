@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evaluación de Tienda</title>
+    <link rel="stylesheet" href="/css/styless.css">
+    <!-- Agregar los enlaces a las bibliotecas de Bootstrap y jQuery -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace al CSS de FontAwesome -->
+</head>
+    
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Formulario de Evaluación de Tienda</h2>
+        <form id="evaluationForm">
+            <!-- ... Resto del formulario ... -->
+                    <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label for="nombreTienda" class="col-sm-4 col-form-label text-right"><i class="fas fa-home"></i>
+                            Nombre de la Tienda:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="nombreTienda"
+                                placeholder="Ingrese el nombre de la tienda">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label for="anio" class="col-sm-4 col-form-label"><i class="fas fa-calendar-day"></i>
+                            Año:</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="anio" placeholder="Ingrese el año">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive hidden" id="evaluationTable">
+                <table class="table table-bordered">
+                    <thead class="color-thead">
+                        <tr>
+                            <th> Características</th>
+                            <th> <img class="img-icon" src="/img/mala.png" alt=""> Mala</th>
+                            <th> <img class="img-icon" src="/img/regular.png" alt=""> Regular</th>
+                            <th> <img class="img-icon" src="/img/buena.png" alt=""> Buena</th>
+                            <th> <img class="img-icon" src="/img/muybuena.png" alt=""> Muy Buena</th>
+                            <th> <img class="img-icon" src="/img/excelente.png" alt=""> Excelente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/funcionalidad.png"
+                                    alt="">Funcionalidad</td>
+                            <td><input type="radio" name="funcionalidad" value="mala"></td>
+                            <td><input type="radio" name="funcionalidad" value="regular"></td>
+                            <td><input type="radio" name="funcionalidad" value="buena"></td>
+                            <td><input type="radio" name="funcionalidad" value="muybuena"></td>
+                            <td><input type="radio" name="funcionalidad" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/confiabilidad.png"
+                                    alt="">Confiabilidad</td>
+                            <td><input type="radio" name="confiabilidad" value="mala"></td>
+                            <td><input type="radio" name="confiabilidad" value="regular"></td>
+                            <td><input type="radio" name="confiabilidad" value="buena"></td>
+                            <td><input type="radio" name="confiabilidad" value="muybuena"></td>
+                            <td><input type="radio" name="confiabilidad" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/usabilidad.png"
+                                    alt="">Usabilidad
+                            </td>
+                            <td><input type="radio" name="usabilidad" value="mala"></td>
+                            <td><input type="radio" name="usabilidad" value="regular"></td>
+                            <td><input type="radio" name="usabilidad" value="buena"></td>
+                            <td><input type="radio" name="usabilidad" value="muybuena"></td>
+                            <td><input type="radio" name="usabilidad" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/rendimiento.png"
+                                    alt="">Rendimiento
+                            </td>
+                            <td><input type="radio" name="rendimiento" value="mala"></td>
+                            <td><input type="radio" name="rendimiento" value="regular"></td>
+                            <td><input type="radio" name="rendimiento" value="buena"></td>
+                            <td><input type="radio" name="rendimiento" value="muybuena"></td>
+                            <td><input type="radio" name="rendimiento" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/mantenimiento.png"
+                                    alt="">Mantenimiento</td>
+                            <td><input type="radio" name="mantenimiento" value="mala"></td>
+                            <td><input type="radio" name="mantenimiento" value="regular"></td>
+                            <td><input type="radio" name="mantenimiento" value="buena"></td>
+                            <td><input type="radio" name="mantenimiento" value="muybuena"></td>
+                            <td><input type="radio" name="mantenimiento" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/portabilidad.png"
+                                    alt="">Portabilidad
+                            </td>
+                            <td><input type="radio" name="portabilidad" value="mala"></td>
+                            <td><input type="radio" name="portabilidad" value="regular"></td>
+                            <td><input type="radio" name="portabilidad" value="buena"></td>
+                            <td><input type="radio" name="portabilidad" value="muybuena"></td>
+                            <td><input type="radio" name="portabilidad" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/seguridad.png"
+                                    alt="">Seguridad</td>
+                            <td><input type="radio" name="seguridadcompatibilidad" value="mala"></td>
+                            <td><input type="radio" name="seguridadcompatibilidad" value="regular"></td>
+                            <td><input type="radio" name="seguridadcompatibilidad" value="buena"></td>
+                            <td><input type="radio" name="seguridadcompatibilidad" value="muybuena"></td>
+                            <td><input type="radio" name="seguridadcompatibilidad" value="excelente"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start td_left"><img class="img-icon" src="/img/compatibilidad.png"
+                                    alt="">Compatibilidad</td>
+                            <td><input type="radio" name="compatibilidad" value="mala"></td>
+                            <td><input type="radio" name="compatibilidad" value="regular"></td>
+                            <td><input type="radio" name="compatibilidad" value="buena"></td>
+                            <td><input type="radio" name="compatibilidad" value="muybuena"></td>
+                            <td><input type="radio" name="compatibilidad" value="excelente"></td>
+                        </tr>
+                        <tr class="color-thead">
+                            <td id="totalPct"> % Porcentaje</td>
+                            <td id="malaPct"></td>
+                            <td id="regularPct"></td>
+                            <td id="buenaPct"></td>
+                            <td id="muybuenaPct"></td>
+                            <td id="excelentePct"></td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center mt-4">
+                <div class="row">
+                    <div class="col-md-3 mb-2">
+                        <button type="button" id="btnGuardar" class="btn btn-primary w-100"> 
+                            <img src="/img/salvar.png" class="img-icon" alt=""> Guardar
+                        </button>                        
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <button type="submit" class="btn btn-primary w-100"> <img src="/img/borrar.png" class="img-icon"
+                                alt=""> Eliminar</button>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <button type="submit" class="btn btn-primary w-100">Enviar 3</button>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <button type="submit" class="btn btn-primary w-100"> <img src="/img/salir.png" class="img-icon"
+                                alt=""> Salir</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ... Resto de tu código ... -->
+
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/evaluationColors.js"></script>
+    <script src="/js/sweetalert2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
